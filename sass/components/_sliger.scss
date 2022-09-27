@@ -1,0 +1,32 @@
+.slider {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    color: var(--main-txt-color);
+    display: flex;
+    gap: 8px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.slider__btn {
+    border: none;
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 22px 6px 22px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--light-txt-color);
+        background-color: var(--accent-txt-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
+    }
+}
+

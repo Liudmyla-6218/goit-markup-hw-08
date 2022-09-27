@@ -1,0 +1,25 @@
+// utils styles
+@import "./utils/vars";
+@import "./utils/visualli-hidden.scss";
+
+// base styles
+@import "./base/base";
+
+
+// components styles
+@import "./components/navigation";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/contacts";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/team";
+@import "./components/socials";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/register-form";
+@import "./components/sliger";
+@import "./components/main-section";
+

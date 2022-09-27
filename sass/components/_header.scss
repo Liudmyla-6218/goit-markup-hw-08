@@ -1,0 +1,14 @@
+.header__container {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+
+}
+.header {
+    background: var(--light-txt-color);
+    border-bottom: 1px solid #ECECEC;
+}
