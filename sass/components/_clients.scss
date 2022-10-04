@@ -17,9 +17,9 @@
     display: flex;
     gap: 30px;
     justify-content: center;
-    flex-direction: column;
-    align-content: center;
+    flex-wrap: wrap;
 }
+
 
 .client__link {
     display: flex;
@@ -29,6 +29,7 @@
     height: 92px;
     border: #AFB1B8 solid 1px;
     border-radius: 4px;
+    
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
         &:hover,
