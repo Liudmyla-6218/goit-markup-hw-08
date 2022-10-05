@@ -59,6 +59,11 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 738px;
@@ -296,6 +301,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .about__item {
@@ -303,7 +312,8 @@ a {
 }
 @media screen and (min-width: 768px) {
   .about__item {
-    width: 354px;
+    width: calc 35%;
+    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -327,6 +337,7 @@ a {
   margin-bottom: 30px;
   background-color: #F5F4FA;
   border-radius: 4px;
+  width: 100%;
 }
 
 .about__caption {
@@ -334,6 +345,7 @@ a {
   font-size: 14px;
   line-height: 1.1428571429;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 10px;
 }
 
