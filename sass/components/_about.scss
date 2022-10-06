@@ -1,12 +1,9 @@
 .about {
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-
     @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 30px;
         flex-wrap: wrap;
     }
-
 }
 
 .about__item {
@@ -56,6 +53,11 @@
     color: var(--secondary-txt-color);
 }
 
+.about-box {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
 .about-box {
     padding-top: 0;
     padding-bottom: 94px;
