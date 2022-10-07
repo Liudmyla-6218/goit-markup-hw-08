@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    width: 100%;
 }
 
 .main__link {
@@ -36,7 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(100%);
+    transform: translateY(103%);
 }
 
 .overlay__desc {
@@ -50,11 +51,30 @@
 }
 
 .main__item {
-    flex-basis: calc((100% - 30px * 2) / 3);
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 30px * 2) / 3);
+    }
+    
 }
 
 .thumb__photo {
+    width: 100%;
     background: var(--light-txt-color);
+
+    @media screen and (min-width: 768px) {
+            width: 354px;
+    
+    }
+    
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+    }
 }
 
 .content {

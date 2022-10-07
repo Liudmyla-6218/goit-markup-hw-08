@@ -1,12 +1,25 @@
 .slider {
+    width: 400px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 16);
     color: var(--main-txt-color);
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 50px;
-    justify-content: center;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+    
 }
 
 .slider__btn {

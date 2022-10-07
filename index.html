@@ -21,14 +21,15 @@
       rel="stylesheet"
     />
     <!--css file-->
-    <link rel="stylesheet" href="./css/main.min.css"/>
-  <!-- </head>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
   <body class="page">
     <header class="header">
       <div class="container header__container">
-        <nav class="nav">
+        <!-- <nav class="nav">
           <a href="./index.html" class="logo header__logo"
-            >Web<span class="logo__text">Studio</span></a>
+            >Web<span class="logo__text">Studio</span></a
+          >
           <ul class="nav__list">
             <li>
               <a
@@ -58,7 +59,17 @@
               >+38 096 111 11 11</a
             >
           </li>
-        </ul>
+        </ul> -->
+        <button
+          class="header__menu-btn-open js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_open"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -172,10 +183,7 @@
           <h2 class="team__heading">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/team/img1.jpg"
-                alt="Ігор Дем'яненко"
-               />
+              <img src="./images/team/img1.jpg" alt="Ігор Дем'яненко" />
               <div class="team-box">
                 <h3 class="team-box__subtitle">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-box__desk">Product Designer</p>
@@ -236,10 +244,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/img2.jpg"
-                alt="Ольга Рєпіна"
-              />
+              <img src="./images/team/img2.jpg" alt="Ольга Рєпіна" />
               <div class="team-box">
                 <h3 class="team-box__subtitle">Ольга Рєпіна</h3>
                 <p lang="en" class="team-box__desk">Frontend Developer</p>
@@ -300,10 +305,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/img3.jpg"
-                alt="Микола Тарасов"
-              />
+              <img src="./images/team/img3.jpg" alt="Микола Тарасов" />
               <div class="team-box">
                 <h3 class="team-box__subtitle">Микола Тарасов</h3>
                 <p lang="en" class="team-box__desk">Marketing</p>
@@ -365,10 +367,7 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/team/img4.jpg"
-                alt="Михайло Єрмаков"
-              />
+              <img src="./images/team/img4.jpg" alt="Михайло Єрмаков" />
               <div class="team-box">
                 <h3 class="team-box__subtitle">Михайло Єрмаков</h3>
                 <p lang="en" class="team-box__desk">UI Designer</p>
@@ -521,91 +520,93 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__tablet">
-         <div class="footer__adress">
-          <a href="" class="logo"
-            >Web<span class="footer__adress-logo">Studio</span></a
-          >
-          <address class="adress">
-            <ul class="address__list">
-              <li class="addres__item">
+          <div class="footer__adress">
+            <a href="" class="logo"
+              >Web<span class="footer__adress-logo">Studio</span></a
+            >
+            <address class="adress">
+              <ul class="address__list">
+                <li class="addres__item">
+                  <a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    class="address__link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="addres__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="adress__contact-link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="addres__item">
+                  <a href="tel:+380961111111" class="adress__contact-link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="socials">
+            <p class="social__title">Приєднуйтесь</p>
+            <ul class="social__list">
+              <li>
                 <a
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  class="address__link"
+                  class="social__link"
+                  href="https://www.instagram.com/"
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
+                  rel="noopener nereffer"
+                  aria-label="instagram"
                 >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="addres__item">
-                <a href="mailto:info@devstudio.com" class="adress__contact-link"
-                  >info@devstudio.com</a
+              <li>
+                <a
+                  class="social__link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener nereffer"
+                  aria-label="twitter"
                 >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="addres__item">
-                <a href="tel:+380961111111" class="adress__contact-link"
-                  >+38 096 111 11 11</a
+              <li>
+                <a
+                  class="social__link"
+                  href="https://uk-ua.facebook.com/"
+                  target="_blank"
+                  rel="noopener nereffer"
+                  aria-label="facebook"
                 >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social__link"
+                  href="https://ua.linkedin.com/"
+                  target="_blank"
+                  rel="noopener nereffer"
+                  aria-label="linkedin"
+                >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-         </div>
-         <div class="socials">
-          <p class="social__title">Приєднуйтесь</p>
-          <ul class="social__list">
-            <li>
-              <a
-                class="social__link"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener nereffer"
-                aria-label="instagram"
-              >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="social__link"
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener nereffer"
-                aria-label="twitter"
-              >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="social__link"
-                href="https://uk-ua.facebook.com/"
-                target="_blank"
-                rel="noopener nereffer"
-                aria-label="facebook"
-              >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="social__link"
-                href="https://ua.linkedin.com/"
-                target="_blank"
-                rel="noopener nereffer"
-                aria-label="linkedin"
-              >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-         </div>
+          </div>
         </div>
         <div class="footer-sub">
           <label class="footer-field">
@@ -715,6 +716,48 @@
         </form>
       </div>
     </div>
+    <!--Mobile menu-->
+    <div class="menu-container js-menu-container">
+        <button class="menu-container__close-btn js-close-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-close" type="button"></use>
+          </svg>
+        </button>
+        <ul class="mobile-list">
+          <li>
+            <a href="" class="mobile__link">Студія</a>
+          </li>
+          <li>
+            <a href="" class="mobile__link">Портфоліо</a>
+          </li>
+          <li>
+            <a href="" class="mobile__link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="contacts-list">
+          <li>
+            <a href="" class="tel-link">+38 096 111 11 11</a>
+          </li>
+          <li>
+            <a href="" class="mail-link">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-socials-list">
+          <li><a href="" class="mobile-socials__link">Instagram </a></li>
+          <li><a href="" class="mobile-socials__link">Twitter</a></li>
+          <li><a href="" class="mobile-socials__link">Facebook</a></li>
+          <li><a href="" class="mobile-socials__link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <!--Mobile script-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
