@@ -2,6 +2,10 @@
     display: flex;
     gap: 50px;
     margin-right: auto;
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
 }
 .nav {
     display: flex;
